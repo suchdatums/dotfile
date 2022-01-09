@@ -1,0 +1,7 @@
+#!bin/bash -i
+
+./util.autossh.sh nasa ssh pi@192.168.4.105
+
+#./autossh.sh nasa ssh pi@192.168.4.105
+
+#./autossh.sh 2001 ssh micah@WORKPONY.local
