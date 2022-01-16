@@ -39,6 +39,7 @@ alias lc="clear && list"
 alias up="go .."
 alias home="go ~/"
 alias list="ls -gop --human-readable --sort=extension --group-directories-first --color=auto"
+alias show="tree -L 2"
 alias files="ls -1p --color=auto | grep -v /"
 
 # --smooth doesn't work anymore??
