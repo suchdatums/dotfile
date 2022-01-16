@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -i
 # this file will update itself when ran
 
 echo "getdot  ::>>>>"
