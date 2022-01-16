@@ -12,8 +12,8 @@ alias files="ls -1p --color=auto | grep -v /"
 
 # --smooth doesn't work anymore??
 # --morespace also...?
-alias e="nano --mouse --linenumbers --nohelp --softwrap"
-alias v="e --view"
+alias nano="nano --mouse --linenumbers --nohelp --softwrap"
+alias v="nano --view"
 
 alias consoletext="sudo dpkg-reconfigure console-setup"
 alias edita="e ~/.bash_aliases && source ~/.bash_aliases"
