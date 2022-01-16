@@ -1,22 +1,38 @@
 #!/bin/bash -i
 
+version="5.556"
+repo="dotfile"
+
 function go {
     builtin cd "$@" && ls -gop --human-readable
 }
 
-###########################################
-echo "getdot  ::>>>>"
-repo="dotfile"
+
+echo 
+echo "getdot  < $version >"
+echo
+
+# download
 url="https://github.com/suchdatums/$repo"
 git clone --depth=1 $url
+
+# move shit
 rm -rf ./$repo/.git
 mv -f ./$repo/* .
 rm -r ./$repo/
 
+# INSTALL SHIT
 mv -f bash_aliases .bash_aliases
-
 chmod +x getdot
+
+# happy screen
+echo
+echo "m*#*"
+echo "    #y*a"
+echo "        m*#*"
+echo "            my*#"
+echo "                #*ca"
 go
-echo "UPDATED TO VERSION 5.55"
+echo "UPDATED TO VERSION $version"
 # this file will update itself when ran
 # on my god i can't believe this works.
