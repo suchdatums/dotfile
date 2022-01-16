@@ -1,3 +1,25 @@
+function go {
+    builtin cd "$@" && clear && list
+}
+function temp {
+    tc=$(echo $(/opt/vc/bin/vcgencmd measure_temp))
+    tc=$(echo $tc | grep -Eo "[0-9]+\.[0-9]+")
+    tf=$(echo "scale=2;((9/5) * $tc) + 32"|bc)
+    echo "$tc C = $tf F"
+}
+function tempc2f {
+    echo "scale=2;((9/5) * $1) + 32" | bc;
+}
+function when {
+    echo $(date -d @$1)
+}
+# alias sec="echo $EPOCHSECONDS"
+function now {
+    echo $(date +%s)
+}
+
+
+
 # 5.55!!! <3
 alias dot="./getdot"
 alias c="clear"

@@ -36,3 +36,5 @@ go
 echo "UPDATED TO VERSION $version"
 # this file will update itself when ran
 # on my god i can't believe this works.
+
+cat help
