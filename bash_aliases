@@ -1,3 +1,4 @@
+# 5.55!!! <3
 alias dot="./getdot"
 alias c="clear"
 alias lc="clear && list"

@@ -1,6 +1,11 @@
 #!/bin/bash -i
 # this file will update itself when ran
 
+function go {
+    builtin cd "$@" && clear && ls -gop --human-readable
+}
+
+###########################################
 echo "getdot  ::>>>>"
 repo="dotfile"
 url="https://github.com/suchdatums/$repo"
