@@ -1,8 +1,18 @@
 export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w]\n\e[1;31m└─\e[1;33m\$ \e[0m"
 
+# function go {
+#     builtin cd "$@" && clear && ls -gop --human-readable --sort=extension --group-directories-first --color=auto
+# }
+# function ggg { if [ -z $1 ]; then echo "go where??"; else echo $1; fi; }
+
 function go {
-    builtin cd "$@" && clear && ls -gop --human-readable --sort=extension --group-directories-first --color=auto
+    if [ -z $1 ]; then
+        echo "go where??"
+    else
+        builtin cd "$1" && clear && ls -gop --human-readable --sort=extension --group-directories-first --color=auto
+    fi
 }
+
 function temp {
     tc=$(echo $(/opt/vc/bin/vcgencmd measure_temp))
     tc=$(echo $tc | grep -Eo "[0-9]+\.[0-9]+")
@@ -27,6 +37,7 @@ alias c="clear"
 alias lc="clear && list"
 # update go function above if you update list
 alias up="go .."
+alias home="go ~/"
 alias list="ls -gop --human-readable --sort=extension --group-directories-first --color=auto"
 alias files="ls -1p --color=auto | grep -v /"
 
