@@ -1,11 +1,32 @@
 export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w]\n\e[1;31m└─\e[1;33m\$ \e[0m"
 
+function go {
+    builtin cd "$@" && clear && ls -gop --human-readable --sort=extension --group-directories-first --color=auto
+}
+function temp {
+    tc=$(echo $(/opt/vc/bin/vcgencmd measure_temp))
+    tc=$(echo $tc | grep -Eo "[0-9]+\.[0-9]+")
+    tf=$(echo "scale=2;((9/5) * $tc) + 32"|bc)
+    echo "$tc C = $tf F"
+}
+function tempc2f {
+    echo "scale=2;((9/5) * $1) + 32" | bc;
+}
+function when {
+    echo $(date -d @$1)
+}
+# alias sec="echo $EPOCHSECONDS"
+function now {
+    echo $(date +%s)
+}
+
 # <3
 
 alias dot="~/getdot"
 alias c="clear"
 alias lc="clear && list"
-# update go if you update list
+# update go function above if you update list
+alias up="go .."
 alias list="ls -gop --human-readable --sort=extension --group-directories-first --color=auto"
 alias files="ls -1p --color=auto | grep -v /"
 
@@ -63,24 +84,8 @@ alias helpme="v ~/helpme"
 #alias b='git branch'
 #alias gc='git checkout'
 
-function go {
-    builtin cd "$@" && clear && ls -gop --human-readable --sort=extension --group-directories-first --color=auto
-}
-function temp {
-    tc=$(echo $(/opt/vc/bin/vcgencmd measure_temp))
-    tc=$(echo $tc | grep -Eo "[0-9]+\.[0-9]+")
-    tf=$(echo "scale=2;((9/5) * $tc) + 32"|bc)
-    echo "$tc C = $tf F"
-}
-function tempc2f {
-    echo "scale=2;((9/5) * $1) + 32" | bc;
-}
-function when {
-    echo $(date -d @$1)
-}
-# alias sec="echo $EPOCHSECONDS"
-function now {
-    echo $(date +%s)
-}
+
+
+
 
 #echo "                                          hey... listen!!"
