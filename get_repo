@@ -36,3 +36,9 @@ exit
 fi
 cp -rf ./$repo/* .
 rm -r ./$repo/
+
+echo "\n>>> CHANGE PERMISSIONS TO $repo_SETUP ?"
+if [ $inp != "yes" ]; then
+exit
+fi
+chmod +x SETUP_$repo
