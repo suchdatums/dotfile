@@ -15,6 +15,6 @@ ls -gop --human-readable
 echo
 echo "VERSION 1.8"
 echo
-echo "to update, just type: dot"
+echo "to update again, just type: dot"
 
 source .bashrc
