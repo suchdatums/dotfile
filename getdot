@@ -1,8 +1,7 @@
 #!/bin/bash -i
-# this file will update itself when ran
 
 function go {
-    builtin cd "$@" && clear && ls -gop --human-readable
+    builtin cd "$@" && ls -gop --human-readable
 }
 
 ###########################################
@@ -16,7 +15,8 @@ rm -r ./$repo/
 
 mv -f bash_aliases .bash_aliases
 
-# give myself permission... will this work?
 chmod +x getdot
 go
 echo "UPDATED TO VERSION 5.55"
+# this file will update itself when ran
+# on my god i can't believe this works.
