@@ -2,18 +2,18 @@
 
 # this file will update itself when ran
 
-repo='dotfile'
+repo="dotfile"
 url="https://github.com/suchdatums/$repo"
 git clone --depth=1 $url
 rm -rf ./$repo/.git
 mv -f ./$repo/* .
 rm -r ./$repo/
 mv -f bash_aliases .bash_aliases
-source .bashrc
 chmod +x getdot
 ls -gop --human-readable
 
-echo "UPDATED TO VERSION 7777777777777"
+echo "VERSION 777777"
 echo "to update: dot"
 echo "to tidy: rm install_*"
-echo 
+
+source .bashrc
