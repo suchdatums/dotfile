@@ -10,8 +10,10 @@ else
 repo=$1
 fi
 
+echo getting $repo
+
 # if the repo has already been downloaded...
-if [ -f ./$repo/ ]; then
+if [ -d ./$repo/ ]; then
 echo "this repo already exists..."
 echo "remove with:"
 echo "rm -rf $repo"
