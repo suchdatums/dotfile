@@ -1,10 +1,13 @@
-#!/bin/bash
+#!/bin/bash -i
 
-repo="dotfile"
+echo "what repo???"
+read repo
+
 url="https://github.com/suchdatums/$repo"
 git clone --depth=1 $url
 rm -rf ./$repo/.git
-mv -f ./$repo/* .
-rm -r ./$repo/
 
-mv bash_aliases .bash_aliases
+# keep it in it's folder...
+
+#mv -f ./$repo/* .
+#rm -r ./$repo/

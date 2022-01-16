@@ -1,5 +1,9 @@
 export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w]\n\e[1;31m└─\e[1;33m\$ \e[0m"
 
+# <3
+# <3
+# <3
+
 function go {
     builtin cd "$@" && clear && list
 }
@@ -19,6 +23,10 @@ function when {
 function now {
     echo $(date +%s)
 }
+
+# <3
+# <3
+# <3
 
 alias dot="./getdot"
 alias c="clear"
@@ -65,6 +73,9 @@ alias logs="tail -f ~/*.log"
 alias monitor="tail -f -q ~/*.log"
 alias helpme="v ~/helpme"
 
+# <3
+# <3
+# <3
 
 #alias restart='sudo reboot'
 #alias shutdown='sudo halt'
