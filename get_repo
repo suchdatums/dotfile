@@ -21,8 +21,10 @@ fi
 
 url="https://github.com/suchdatums/$repo"
 git clone --recurse-submodules $url
-rm -rf ./$repo/.git
-rm ./$repo/.gitignore
+git submodule init 
+git submodule update
+#rm -rf ./$repo/.git
+#rm ./$repo/.gitignore
 
 echo ">>> DO YOU WANT TO INSTALL IN THE HOME FOLDER?"
 echo "type: yes"
