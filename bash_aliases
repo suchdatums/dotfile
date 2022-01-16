@@ -83,4 +83,4 @@ function now {
     echo $(date +%s)
 }
 
-echo "                                          hey... listen!!"
+#echo "                                          hey... listen!!"
