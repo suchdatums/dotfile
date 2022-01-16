@@ -22,7 +22,7 @@ function now {
 
 # <3
 
-alias dot="~/getdot"
+alias dot="cd ~/ && ~/getdot"
 alias c="clear"
 alias lc="clear && list"
 # update go function above if you update list
