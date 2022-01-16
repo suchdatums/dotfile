@@ -1,3 +1,4 @@
+alias dot="./getdot"
 alias c="clear"
 alias lc="clear && list"
 alias list="ls -gop --human-readable --sort=extension --group-directories-first --color=auto"
