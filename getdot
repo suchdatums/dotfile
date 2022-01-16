@@ -11,7 +11,7 @@ rm -r ./$repo/
 mv -f bash_aliases .bash_aliases
 chmod +x getdot get_repo
 clear
-ls -gop --human-readable
+ls -gop --human-readable --sort=extension --group-directories-first --color=auto
 
 echo
 echo "VERSION" + 5.1
