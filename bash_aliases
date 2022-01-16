@@ -1,32 +1,6 @@
 export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w]\n\e[1;31m└─\e[1;33m\$ \e[0m"
 
 # <3
-# <3
-# <3
-
-function go {
-    builtin cd "$@" && clear && list
-}
-function temp {
-    tc=$(echo $(/opt/vc/bin/vcgencmd measure_temp))
-    tc=$(echo $tc | grep -Eo "[0-9]+\.[0-9]+")
-    tf=$(echo "scale=2;((9/5) * $tc) + 32"|bc)
-    echo "$tc C = $tf F"
-}
-function tempc2f {
-    echo "scale=2;((9/5) * $1) + 32" | bc;
-}
-function when {
-    echo $(date -d @$1)
-}
-# alias sec="echo $EPOCHSECONDS"
-function now {
-    echo $(date +%s)
-}
-
-# <3
-# <3
-# <3
 
 alias dot="./getdot"
 alias c="clear"
@@ -72,11 +46,6 @@ alias cpuspeed="sudo cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq"
 alias logs="tail -f ~/*.log"
 alias monitor="tail -f -q ~/*.log"
 alias helpme="v ~/helpme"
-
-# <3
-# <3
-# <3
-
 #alias restart='sudo reboot'
 #alias shutdown='sudo halt'
 #alias apt-get='sudo apt-get'
@@ -94,8 +63,24 @@ alias helpme="v ~/helpme"
 #alias b='git branch'
 #alias gc='git checkout'
 
-# <3
-# <3
-# <3
+function go {
+    builtin cd "$@" && clear && list
+}
+function temp {
+    tc=$(echo $(/opt/vc/bin/vcgencmd measure_temp))
+    tc=$(echo $tc | grep -Eo "[0-9]+\.[0-9]+")
+    tf=$(echo "scale=2;((9/5) * $tc) + 32"|bc)
+    echo "$tc C = $tf F"
+}
+function tempc2f {
+    echo "scale=2;((9/5) * $1) + 32" | bc;
+}
+function when {
+    echo $(date -d @$1)
+}
+# alias sec="echo $EPOCHSECONDS"
+function now {
+    echo $(date +%s)
+}
 
 echo "                                          hey... listen!!"
