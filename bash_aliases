@@ -8,7 +8,6 @@ alias lc="clear && list"
 # update go if you update list
 alias list="ls -gop --human-readable --sort=extension --group-directories-first --color=auto"
 alias files="ls -1p --color=auto | grep -v /"
-# use the go function in .bashrc
 
 # --smooth doesn't work anymore??
 # --morespace also...?
