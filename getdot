@@ -10,6 +10,7 @@ mv -f ./$repo/* .
 rm -r ./$repo/
 mv -f bash_aliases .bash_aliases
 chmod +x getdot
+clear
 ls -gop --human-readable
 
 echo
