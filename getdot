@@ -13,3 +13,5 @@ mv -f bash_aliases .bash_aliases
 
 # give myself permission... will this work?
 chmod +x getdot
+go
+echo "UPDATED TO VERSION 5.55"
