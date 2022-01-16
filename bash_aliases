@@ -2,7 +2,7 @@ export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w]\n\e[1;31m└─\e[1;
 
 # <3
 
-alias dot="./getdot"
+alias dot="~/getdot"
 alias c="clear"
 alias lc="clear && list"
 # update go if you update list
