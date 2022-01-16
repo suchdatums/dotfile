@@ -12,7 +12,7 @@ mv -f bash_aliases .bash_aliases
 chmod +x getdot
 ls -gop --human-readable
 
-echo "VERSION 777777"
+echo "VERSION 8"
 echo "to update: dot"
 echo "to tidy: rm install_*"
 
