@@ -14,7 +14,7 @@ clear
 ls -gop --human-readable --sort=extension --group-directories-first --color=auto
 
 echo
-echo "VERSION" + 5.1
+echo VERSION 5.2
 echo
 echo "to update again, just type: dot"
 
