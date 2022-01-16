@@ -93,3 +93,9 @@ alias helpme="v ~/helpme"
 #alias bn='git checkout -B'
 #alias b='git branch'
 #alias gc='git checkout'
+
+# <3
+# <3
+# <3
+
+echo "# hey... listen!!               #"

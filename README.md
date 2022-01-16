@@ -2,13 +2,20 @@
 
 Use the guide, Luke!
 
+# get repo
+```
+git clone --depth=1 https://github.com/suchdatums/dotfile
+rm -rf ./$repo/.git
+echo "mv -f ./$repo/* ."
+echo "rm -r ./$repo/"
+```
 
 inspired by: https://github.com/geohot/configuration
 
 # VS CODE
 ```
-git config --global user.name "..."
-git config --global user.email "..."
+git config --global user.name ""
+git config --global user.email ""
 git config --list
 ~/.gitconfig
 ```
@@ -31,6 +38,10 @@ nano .config/lxterminal/lxterminal.conf
 #https://www.datafix.com.au/BASHing/2020/02/19.html
 #what does this do?
 #showconsolefont
+echo "for dotfile installation..."
+echo "mv -f ./$repo/* ."
+echo "rm -r ./$repo/"
+echo "sh getdot"
 
 
 
@@ -130,7 +141,30 @@ curl -sSL https://raw.githubusercontent.com/sundowndev/dotfiles/master/install.s
 
 
 
+# install profile
 
+```
+#!/bin/bash -i
+
+cat << EOF >> /etc/profile
+
+echo
+echo
+echo "#################################"
+echo "#                               #"
+echo "# hey... listen!!               #"
+echo "#                               #"
+echo "# use                           #"
+echo "#     dot                       #"
+echo "#         to update             #"
+echo "#                               #"
+echo "# use the cat for help...       #"
+echo "# 'cat help'                    #"
+echo "#################################"
+echo
+
+EOF
+```
 
 
 
