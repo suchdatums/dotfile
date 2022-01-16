@@ -21,8 +21,10 @@ fi
 
 url="https://github.com/suchdatums/$repo"
 git clone --recurse-submodules --remote-submodules $url
-#git submodule init 
-#git submodule update
+# TODO 
+# how can I recurse into every subdir and delete the .git file?
+# can can I do this safely without destorying any project I may be working on?
+# I only want to go into the DOWNLOADED submodules and delete the .git folder... hmmm.
 rm -rf ./$repo/.git
 rm ./$repo/.gitignore
 
