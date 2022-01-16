@@ -9,7 +9,7 @@ rm -rf ./$repo/.git
 mv -f ./$repo/* .
 rm -r ./$repo/
 mv -f bash_aliases .bash_aliases
-chmod +x getdot get_repo
+chmod +x getdot getrepo
 clear
 ls -gop --human-readable --sort=extension --group-directories-first --color=auto
 
