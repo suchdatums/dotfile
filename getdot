@@ -14,7 +14,7 @@ clear
 ls -gop --human-readable
 
 echo
-echo "VERSION 1.8"
+echo "VERSION" + 5.1
 echo
 echo "to update again, just type: dot"
 

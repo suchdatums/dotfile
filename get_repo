@@ -30,5 +30,5 @@ read inp
 if [ $inp != "yes" ]; then
 exit
 fi
-cp -f ./$repo/* .
+cp -rf ./$repo/* .
 rm -r ./$repo/
