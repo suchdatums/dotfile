@@ -28,6 +28,7 @@ git clone --recurse-submodules --remote-submodules $url
 rm -rf ./$repo/.git
 rm ./$repo/.gitignore
 
+echo
 echo ">>> DO YOU WANT TO INSTALL IN THE HOME FOLDER?"
 echo "type: yes"
 read inp
@@ -37,7 +38,10 @@ fi
 cp -rf ./$repo/* .
 rm -r ./$repo/
 
-echo "\n>>> CHANGE PERMISSIONS TO $repo_SETUP ?"
+echo
+echo ">>> CHANGE PERMISSIONS TO SETUP_$repo?"
+echo "type: yes"
+read inp
 if [ $inp != "yes" ]; then
 exit
 fi
