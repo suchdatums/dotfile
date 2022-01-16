@@ -5,6 +5,7 @@ export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w]\n\e[1;31m└─\e[1;
 alias dot="./getdot"
 alias c="clear"
 alias lc="clear && list"
+# update go if you update list
 alias list="ls -gop --human-readable --sort=extension --group-directories-first --color=auto"
 alias files="ls -1p --color=auto | grep -v /"
 # use the go function in .bashrc
@@ -64,7 +65,7 @@ alias helpme="v ~/helpme"
 #alias gc='git checkout'
 
 function go {
-    builtin cd "$@" && clear && list
+    builtin cd "$@" && clear && ls -gop --human-readable --sort=extension --group-directories-first --color=auto
 }
 function temp {
     tc=$(echo $(/opt/vc/bin/vcgencmd measure_temp))
