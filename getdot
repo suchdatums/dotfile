@@ -2,7 +2,8 @@
 
 # this file will update itself when ran
 
-url="https://github.com/suchdatums/dotfile"
+repo='dotfile'
+url="https://github.com/suchdatums/$repo"
 git clone --depth=1 $url
 rm -rf ./$repo/.git
 mv -f ./$repo/* .
@@ -13,6 +14,6 @@ chmod +x getdot
 ls -gop --human-readable
 
 echo "UPDATED TO VERSION 7777777777777"
-echo
-echo "clean dot: rm install_*"
-echo
+echo "to update: dot"
+echo "to tidy: rm install_*"
+echo 
