@@ -20,7 +20,7 @@ exit
 fi
 
 url="https://github.com/suchdatums/$repo"
-git clone --depth=1 --recurse-submodules $url
+git clone --recurse-submodules $url
 rm -rf ./$repo/.git
 rm ./$repo/.gitignore
 
