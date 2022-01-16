@@ -13,9 +13,7 @@ chmod +x getdot getrepo
 clear
 ls -gop --human-readable --sort=extension --group-directories-first --color=auto
 
-echo
-echo VERSION 5.2
-echo
-echo "to update again, just type: dot"
+echo VERSION 5.5
 
-source .bashrc
+# if this file is executable, then use '.' instead of 'source'
+. .bashrc
