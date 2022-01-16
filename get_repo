@@ -10,7 +10,8 @@ rm ./$repo/.gitignore
 echo ">>> DO YOU WANT TO INSTALL IN THE HOME FOLDER?"
 echo "type: yes"
 read inp
-if [-ne inp "yes"] then
+if [ $inp != "yes" ]
+then
 exit
 fi
 mv -f ./$repo/* .
