@@ -1,6 +1,7 @@
 #!/bin/bash
+# this file will update itself when ran
 
-echo "dogododgogodt"
+echo "getdot  ::>>>>"
 repo="dotfile"
 url="https://github.com/suchdatums/$repo"
 git clone --depth=1 $url
@@ -9,3 +10,6 @@ mv -f ./$repo/* .
 rm -r ./$repo/
 
 mv -f bash_aliases .bash_aliases
+
+# give myself permission... will this work?
+chmod +x getdot
