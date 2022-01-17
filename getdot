@@ -19,5 +19,7 @@ echo
 echo "TO INSTALL RUN THIS:"
 echo "                    source .bashrc"
 
+# BUG
 # if this file is executable, then use '.' instead of 'source'
+# but it's not working...
 #. .bashrc
