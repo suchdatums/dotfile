@@ -1,6 +1,6 @@
 # if [[ "$whole" == *"$part"* ]]; then
-if [[ ! $(uname -a) == *"$Kali"* ]]; then; echo "SHIT"; fi
-  export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w]\n\e[1;31m└─\e[1;33m\$ \e[0m"
+if [[ ! $(uname -a) == *"$Kali"* ]]; then
+    export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w]\n\e[1;31m└─\e[1;33m\$ \e[0m"
 fi
 
 #export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w]\n\e[1;31m└─\e[1;33m\$ \e[0m"
