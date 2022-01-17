@@ -34,10 +34,11 @@ function now {
 
 alias dot="cd ~/ && ~/getdot"
 alias c="clear"
-alias lc="clear && list"
-# update go function above if you update list
+alias cl="clear && list"
+alias ll="ls -l"
 alias up="go .."
 alias home="go ~/"
+# update go function above if you update list
 alias list="ls -gop --human-readable --sort=extension --group-directories-first --color=auto"
 alias show="tree -L 2"
 alias files="ls -1p --color=auto | grep -v /"
@@ -45,10 +46,11 @@ alias files="ls -1p --color=auto | grep -v /"
 # --smooth doesn't work anymore??
 # --morespace also...?
 alias nano="nano --mouse --linenumbers --nohelp --softwrap"
-alias v="nano --view"
+# WARNING: this overwrites "/usr/bin/view" which is vi
+alias view="nano --view"
 
 alias consoletext="sudo dpkg-reconfigure console-setup"
-alias edita="e ~/.bash_aliases && source ~/.bash_aliases"
+#alias edita="e ~/.bash_aliases && source ~/.bash_aliases"
 alias editdisp="sudo nano --smooth /boot/config.txt"
 alias editfont="nano ~/.fig/lxterminal/lxterminal.conf"
 alias edittty="sudo dpkg-reconfigure console-setup"
@@ -76,9 +78,11 @@ alias mouselag="sudo echo \"usbhid.mousepoll=8\" >> /boot/cmdline.txt && sudo na
 alias cpuspeed="sudo cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq"
 
 # custom for BECOOL
-alias logs="tail -f ~/*.log"
-alias monitor="tail -f -q ~/*.log"
-alias helpme="v ~/helpme"
+#alias logs="tail -f ~/*.log"
+#alias monitor="tail -f -q ~/*.log"
+
+
+# PARSE THESE AND DELETE
 #alias restart='sudo reboot'
 #alias shutdown='sudo halt'
 #alias apt-get='sudo apt-get'
@@ -95,9 +99,5 @@ alias helpme="v ~/helpme"
 #alias bn='git checkout -B'
 #alias b='git branch'
 #alias gc='git checkout'
-
-
-
-
 
 #echo "                                          hey... listen!!"
