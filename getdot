@@ -1,5 +1,5 @@
 #!/bin/bash -i
-ver=9001
+
 repo="dotfile"
 url="https://github.com/suchdatums/$repo"
 git clone --depth=1 $url
@@ -8,12 +8,18 @@ mv -f ./$repo/* .
 rm -r ./$repo/
 mv -f bash_aliases .bash_aliases
 chmod +x getdot getrepo
-clear
-ls -gop --human-readable --sort=extension --group-directories-first --color=auto
 
+# VERSION
+ver=9002
+clear
+echo
 echo "VERSION: <<< $ver >>>"
-echo "TO VIEW CUSTOM COMMANDS: alias"
-echo "TO INSTALL: source .bashrc"
+echo
+ls -gop --human-readable --sort=extension --group-directories-first --color=auto
+echo
+echo "TO VIEW CUSTOM COMMANDS:\talias"
+echo "TO INSTALL:\t\tsource .bashrc"
+echo
 
 # BUG
 # if this file is executable, then use '.' instead of 'source'
