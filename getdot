@@ -17,4 +17,4 @@ echo
 echo "to view custom commands, just type --> alias"
 
 # if this file is executable, then use '.' instead of 'source'
-. .bashrc
+source .bashrc
