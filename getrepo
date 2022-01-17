@@ -1,7 +1,5 @@
 #!/bin/bash -i
 
-#TODO pass argument into file
-
 # if first passed argument is empty, then
 if [ -z $1 ]; then
 echo "what repo???"
