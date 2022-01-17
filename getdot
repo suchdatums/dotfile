@@ -10,7 +10,7 @@ mv -f bash_aliases .bash_aliases
 chmod +x getdot getrepo
 
 # VERSION
-ver=9002
+ver=9003
 clear
 echo
 echo "VERSION: <<< $ver >>>"
@@ -18,7 +18,7 @@ echo
 ls -gop --human-readable --sort=extension --group-directories-first --color=auto
 echo
 echo -e "TO VIEW CUSTOM COMMANDS:\talias"
-echo -e "TO INSTALL:\t\tsource .bashrc"
+echo -e "TO INSTALL:\t\t\tsource .bashrc"
 echo
 
 # BUG
