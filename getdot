@@ -11,7 +11,8 @@ mv -f ./$repo/* .
 rm -r ./$repo/
 # mv won't work if it's a dot file
 mv -f bash_aliases .bash_aliases
-mv -f *dot .*dot
+mv -f getdot .getdot
+mv -f helpdot .helpdot
 chmod +x .getdot getrepo
 sudo chattr +i getrepo
 
@@ -22,7 +23,12 @@ echo
 echo "VERSION: <<< $ver >>>"
 echo
 ls -gop --human-readable --sort=extension --group-directories-first --color=auto
-echo -e "\n\nhey... things have changed ... run this command to finish up!!!!!!!!\n\nsource .bashrc"
+echo
+echo
+echo "hey... things have changed"
+echo "run this command to finish up!!"
+echo
+echo "source .bashrc"
 
 # BUG
 # if this file is executable, then use '.' instead of 'source'
