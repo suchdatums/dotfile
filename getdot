@@ -25,7 +25,6 @@ echo "VERSION: <<< $ver >>>"
 echo
 ls -gop --human-readable --sort=extension --group-directories-first --color=auto
 echo
-echo
 echo "hey... things have changed"
 echo "run this command to finish up!!"
 echo
