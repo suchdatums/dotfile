@@ -1,0 +1,13 @@
+: . : . : . : . : . : . : . : . : . : . : . : . : . : . : . : . : . : . : . : .
+
+use these commands:
+
+cl              -   clear and list files
+show <folder>   -   to see inside a folder
+go <folder>     -   go there
+
+
+Run this to get the dot:
+    curl https://raw.githubusercontent.com/suchdatums/dotfile/main/getdot | bash
+
+: . : . : . : . : . : . : . : . : . : . : . : . : . : . : . : . : . : . : . : .

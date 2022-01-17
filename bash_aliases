@@ -33,6 +33,7 @@ function now {
 # <3
 
 alias dot="cd ~/ && ~/.getdot"
+alias helpdot="less .helpdot"
 
 # update go function above if you update list
 alias l="ls -gop --human-readable --sort=extension --group-directories-first --color=auto"

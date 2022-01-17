@@ -3,7 +3,6 @@
 if [ -f ./getrepo ]; then
     sudo chattr -i getrepo
 fi
-
 repo="dotfile"
 url="https://github.com/suchdatums/$repo"
 git clone --depth=1 $url
@@ -12,19 +11,18 @@ mv -f ./$repo/* .
 rm -r ./$repo/
 # mv won't work if it's a dot file
 mv -f bash_aliases .bash_aliases
-mv -f getdot .getdot
+mv -f *dot .*dot
 chmod +x .getdot getrepo
-# can't be deleted
 sudo chattr +i getrepo
 
-# VERSION
-ver=9004
+########
+ver=9007
 clear
 echo
 echo "VERSION: <<< $ver >>>"
 echo
 ls -gop --human-readable --sort=extension --group-directories-first --color=auto
-echo -e "\n\nhey... run this command to finish up\n\nsource .bashrc"
+echo -e "\n\nhey... things have changed\nrun this command to finish up!!!!!!!!\n\nsource .bashrc"
 
 # BUG
 # if this file is executable, then use '.' instead of 'source'
