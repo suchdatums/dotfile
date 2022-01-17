@@ -3,11 +3,13 @@
 use these commands:
 
 cl              -   clear and list files
+all             -   list all files (includes hidden files)
 show <folder>   -   to see inside a folder
 go <folder>     -   go there
+up              -   go up one level
+more <file>     -   show a large file (like a log file; press Q to exit)
 
-
-Run this to get the dot:
+Run this to get a fresh dot:
     curl https://raw.githubusercontent.com/suchdatums/dotfile/main/getdot | bash
 
 
