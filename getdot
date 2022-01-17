@@ -1,5 +1,7 @@
 #!/bin/bash -i
 
+sudo chattr -i getrepo
+
 repo="dotfile"
 url="https://github.com/suchdatums/$repo"
 git clone --depth=1 $url
