@@ -34,7 +34,7 @@ function now {
 
 alias dot="cd ~/ && ~/.getdot"
 alias helpdot="less .helpdot"
-alias gethelp="curl -s https://raw.githubusercontent.com/suchdatums/dotfile/main/helpdot && mv -f helpdot .helpdot"
+alias gethelp="curl -s https://raw.githubusercontent.com/suchdatums/dotfile/main/helpdot > .helpdot"
 
 # update go function above if you update list
 alias l="ls -gop --human-readable --sort=extension --group-directories-first --color=auto"
