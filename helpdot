@@ -13,6 +13,8 @@ less <file>     -   show a large file (like a log file; press Q to exit)
 home            -   go home
 mc              -   midnight commander (sudo apt install mc -y)
 tmux            -   terminal multiplexer (sudo apt install tmux -y)
+                    Control-d then % for vertical split
+                                   " for horizontal split
 
 Run this to get a fresh dot:
     curl https://raw.githubusercontent.com/suchdatums/dotfile/main/getdot | bash
