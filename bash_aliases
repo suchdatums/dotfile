@@ -40,6 +40,7 @@ alias gethelp="curl -s https://raw.githubusercontent.com/suchdatums/dotfile/main
 alias l="ls -gop --human-readable --sort=extension --group-directories-first --color=auto"
 alias cl="clear && l"
 alias all="ls -gopal"
+alias hidden="ls -ld .?*"
 alias show="tree -L 2"
 alias files="ls -1p | grep -v /"
 
