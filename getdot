@@ -14,9 +14,9 @@ clear
 ls -gop --human-readable --sort=extension --group-directories-first --color=auto
 
 echo
-echo >>> VERSION 9000 <<<
+echo "VERSION: <<< $ver >>>"
 echo 
-echo "to view custom commands, just type alias"
+echo "to view custom commands, just type --> alias"
 
 # if this file is executable, then use '.' instead of 'source'
 . .bashrc
