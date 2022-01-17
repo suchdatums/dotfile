@@ -1,7 +1,5 @@
 #!/bin/bash -i
-
-# this file will update itself when ran
-
+ver=9000
 repo="dotfile"
 url="https://github.com/suchdatums/$repo"
 git clone --depth=1 $url
