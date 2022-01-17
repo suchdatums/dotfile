@@ -1,5 +1,5 @@
 #!/bin/bash -i
-ver=9000
+ver=9001
 repo="dotfile"
 url="https://github.com/suchdatums/$repo"
 git clone --depth=1 $url
@@ -15,6 +15,9 @@ echo
 echo "VERSION: <<< $ver >>>"
 echo 
 echo "to view custom commands, just type --> alias"
+echo 
+echo "TO INSTALL RUN THIS:"
+echo "                    source .bashrc"
 
 # if this file is executable, then use '.' instead of 'source'
-source .bashrc
+#. .bashrc
