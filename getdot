@@ -10,6 +10,8 @@ rm -r ./$repo/
 mv -f bash_aliases .bash_aliases
 mv -f getdot .getdot
 chmod +x .getdot getrepo
+# can't be deleted
+chattr +u getrepo
 
 # VERSION
 ver=9004
