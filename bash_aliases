@@ -33,7 +33,7 @@ function now {
 # <3
 
 alias dot="cd ~/ && ~/.getdot"
-alias helpdot="less .helpdot"
+alias helpdot="more .helpdot"
 alias gethelp="curl -s https://raw.githubusercontent.com/suchdatums/dotfile/main/helpdot > .helpdot"
 
 # update go function above if you update list
