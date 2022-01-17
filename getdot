@@ -13,7 +13,10 @@ chmod +x getdot getrepo
 clear
 ls -gop --human-readable --sort=extension --group-directories-first --color=auto
 
-echo VERSION 5.5
+echo
+echo >>> VERSION 9000 <<<
+echo 
+echo "to view custom commands, just type alias"
 
 # if this file is executable, then use '.' instead of 'source'
 . .bashrc
