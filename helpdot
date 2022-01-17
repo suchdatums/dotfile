@@ -14,4 +14,6 @@ more <file>     -   show a large file (like a log file; press Q to exit)
 Run this to get a fresh dot:
     curl https://raw.githubusercontent.com/suchdatums/dotfile/main/getdot | bash
 
+To persist on Kali:
+    echo ". ./.bash_aliases" >> .zshrc
 : . : . : . : . : . : . : . : . : . : . : . : . : . : . : . : . : . : . : . : .
