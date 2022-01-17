@@ -16,10 +16,7 @@ echo
 echo "VERSION: <<< $ver >>>"
 echo
 ls -gop --human-readable --sort=extension --group-directories-first --color=auto
-echo
-echo -e "TO VIEW CUSTOM COMMANDS:\talias"
-echo -e "TO INSTALL:\t\t\tsource .bashrc"
-echo
+echo -e "\n\nhey... run this command to finish up\n\nsource .bashrc"
 
 # BUG
 # if this file is executable, then use '.' instead of 'source'
