@@ -10,4 +10,6 @@ go <folder>     -   go there
 Run this to get the dot:
     curl https://raw.githubusercontent.com/suchdatums/dotfile/main/getdot | bash
 
+
+PRESS Q TO EXIT...
 : . : . : . : . : . : . : . : . : . : . : . : . : . : . : . : . : . : . : . : .

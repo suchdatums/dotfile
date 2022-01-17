@@ -25,10 +25,11 @@ echo "VERSION: <<< $ver >>>"
 echo
 ls -gop --human-readable --sort=extension --group-directories-first --color=auto
 echo
-echo "hey... things have changed"
-echo "run this command to finish up!!"
+echo "hey... things have changed..!"
 echo
-echo "source .bashrc"
+echo "RUN THIS command to finish up:    source .bashrc"
+echo "then, run this for help:          helpdot"
+echo
 
 # BUG
 # if this file is executable, then use '.' instead of 'source'
