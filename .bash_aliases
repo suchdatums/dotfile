@@ -32,7 +32,7 @@ function now {
 
 # <3
 
-alias dot="cd ~/ && ~/getdot"
+alias dot="cd ~/ && ~/.getdot"
 alias c="clear"
 alias cl="clear && list"
 alias ll="ls -l"
