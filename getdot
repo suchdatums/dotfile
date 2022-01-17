@@ -11,7 +11,7 @@ mv -f bash_aliases .bash_aliases
 mv -f getdot .getdot
 chmod +x .getdot getrepo
 # can't be deleted
-chattr +u getrepo
+sudo chattr +i getrepo
 
 # VERSION
 ver=9004
