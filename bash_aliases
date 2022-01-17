@@ -36,6 +36,7 @@ alias dot="cd ~/ && ~/.getdot"
 
 # update go function above if you update list
 alias l="ls -gop --human-readable --sort=extension --group-directories-first --color=auto"
+alias cl="clear && l"
 alias all="ls -gopal"
 alias show="tree -L 2"
 alias files="ls -1p | grep -v /"

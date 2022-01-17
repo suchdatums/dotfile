@@ -12,7 +12,7 @@ mv -f getdot .getdot
 chmod +x .getdot getrepo
 
 # VERSION
-ver=9003
+ver=9004
 clear
 echo
 echo "VERSION: <<< $ver >>>"
