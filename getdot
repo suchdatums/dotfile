@@ -11,13 +11,9 @@ chmod +x getdot getrepo
 clear
 ls -gop --human-readable --sort=extension --group-directories-first --color=auto
 
-echo
 echo "VERSION: <<< $ver >>>"
-echo 
-echo "to view custom commands, just type --> alias"
-echo 
-echo "TO INSTALL RUN THIS:"
-echo "                    source .bashrc"
+echo "TO VIEW CUSTOM COMMANDS: alias"
+echo "TO INSTALL: source .bashrc"
 
 # BUG
 # if this file is executable, then use '.' instead of 'source'
