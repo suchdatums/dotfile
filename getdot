@@ -3,6 +3,7 @@
 if [ -f ./getrepo ]; then
     sudo chattr -i getrepo
 fi
+
 repo="dotfile"
 url="https://github.com/suchdatums/$repo"
 git clone --depth=1 $url
