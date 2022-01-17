@@ -17,8 +17,8 @@ echo "VERSION: <<< $ver >>>"
 echo
 ls -gop --human-readable --sort=extension --group-directories-first --color=auto
 echo
-echo "TO VIEW CUSTOM COMMANDS:\talias"
-echo "TO INSTALL:\t\tsource .bashrc"
+echo -e "TO VIEW CUSTOM COMMANDS:\talias"
+echo -e "TO INSTALL:\t\tsource .bashrc"
 echo
 
 # BUG
