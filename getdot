@@ -27,7 +27,7 @@ ls -gop --human-readable --sort=extension --group-directories-first --color=auto
 echo
 echo "hey... things have changed..!"
 echo
-echo "RUN THIS command to finish up:    source .bashrc"
+echo "RUN THIS command to finish up:    source .bashrc .bash_aliases"
 echo "then, run this for help:          helpdot"
 echo
 
