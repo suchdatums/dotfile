@@ -1,6 +1,8 @@
 #!/bin/bash -i
 
-sudo chattr -i getrepo
+if [ -f ./getrepo ]; then
+    sudo chattr -i getrepo
+fi
 
 repo="dotfile"
 url="https://github.com/suchdatums/$repo"
