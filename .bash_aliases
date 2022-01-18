@@ -1,4 +1,4 @@
-export DOT_VERSION=9011
+export DOT_VERSION=9012
 
 # Kali OS is running
 if [[ $(uname -a) == *"Kali"* ]]; then
@@ -12,7 +12,7 @@ if [[ $(uname -a) == *"armv7l"* ]]; then
 fi
 
 function chargeup {
-    export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w] \e[31;3m($DOT_VERSION)\e[33;3m\t < GOD MODE ACTIVATED!!! >\n\e[1;31m└─\e[1;33m\$ \e[0m"
+    export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w] \e[31;3m($DOT_VERSION) \e[32;4m\T \e[33;3mGOD_MODE\n\e[1;31m└─\e[1;33m\$ \e[0m"
 }
 function stopthat {
     export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w] \e[31;3m($DOT_VERSION)\n\e[1;31m└─\e[1;33m\$ \e[0m"
