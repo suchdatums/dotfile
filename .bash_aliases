@@ -7,7 +7,7 @@ export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w]\n\e[1;31m└─\e[1;
 #    export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w]\n\e[1;31m└─\e[1;33m\$ \e[0m"
 #fi
 
-if [[ $(uname -a) == *"$Kali"* ]]; then
+if [[ ! $(uname -a) == *"$Kali"* ]]; then
     echo "Kali system detected"
 fi
 if [[ ! $(uname -a) == *"$armv7l"* ]]; then
