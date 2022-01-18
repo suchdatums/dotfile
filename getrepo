@@ -29,15 +29,18 @@ git clone --recurse-submodules --remote-submodules $url
 rm -rf ./$repo/.git
 rm ./$repo/.gitignore
 
+# make scripts executable
+cd ~
+beginswith() { case $2 in "$1"*) true;; *) false;; esac; }
 # loop through every non-hidden file in directory
-# cd $repo
-# for FILE in *; do
-#     # if first line has '#!' in it...
-#     if [ $(head -n 1 FILE) == *"#!"* ]; then
-#         # made executable
-#         chmod +x FILE
-#     fi
-# done
+for FILE in *; do
+#fline=$(head -n 1 $FILE)
+if beginswith #! "$$(head -n 1 $FILE)";
+then
+# made executable
+chmod +x $FILE
+fi
+done
 
 echo
 echo "DO YOU WANT TO INSTALL IN THE HOME FOLDER?"
