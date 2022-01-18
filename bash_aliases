@@ -1,4 +1,4 @@
-export DOT_VERSION=97
+export DOT_VERSION=99
 
 # Kali OS is running
 if [[ $(uname -a) == *"Kali"* ]]; then
