@@ -7,7 +7,7 @@ fi
 
 # raspberry pi OS is running
 if [[ $(uname -a) == *"armv7l"* ]]; then
-    export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w]\n\e[1;31m└─\e[1;33m\$ \e[0m"
+    export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w] \e[31;3m($DOT_VERSION)\n\e[1;31m└─\e[1;33m\$ \e[0m"
 fi
 
 function go {
