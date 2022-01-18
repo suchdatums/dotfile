@@ -5,6 +5,10 @@ if [[ $(uname -a) == *"Kali"* ]]; then
     echo "."
 fi
 
+if [ -f ./.credentials ]; then
+. ./.credentials
+fi
+
 # raspberry pi OS is running
 # armv7l - RPI 4
 # armv6l - RPI ZERO
