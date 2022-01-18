@@ -1,4 +1,4 @@
-export DOT_VERSION=79
+export DOT_VERSION=97
 
 # Kali OS is running
 if [[ $(uname -a) == *"Kali"* ]]; then
@@ -90,7 +90,8 @@ alias edittty="sudo dpkg-reconfigure console-setup"
 #alias myeth="echo \"ethe $(ifconfig eth0 | grep inet | awk '{ print $2 }')\""
 alias ip="hostname -I | cut -d ' ' -f 1"
 
-alias testv="sh -v"
+# expand variables
+alias testit="sh -x"
 # won't expand variables
 alias testx="sh -v"
 

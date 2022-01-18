@@ -31,15 +31,13 @@ rm ./$repo/.gitignore
 
 # make scripts executable
 cd ~
-beginswith() { case $2 in "$1"*) true;; *) false;; esac; }
+#beginswith() { case $2 in "$1"*) true;; *) false;; esac; }
 # loop through every non-hidden file in directory
 for FILE in *; do
-#fline=$(head -n 1 $FILE)
-if beginswith #! "$$(head -n 1 $FILE)";
-then
-# made executable
-chmod +x $FILE
-fi
+    if [ "`head -c 2 $FILE`" = "#!" ]; then then
+        # made executable
+        chmod +x $FILE
+    fi
 done
 
 echo
