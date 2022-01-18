@@ -40,5 +40,7 @@ for FILE in $(files); do
     fi
 done
 
+echo
+echo
 echo "RUN THIS TO INSTALL INTO HOME FOLDER:"
-echo "cp -rf ./$repo/* . && rm -r ./$repo/
+echo "cp -rf ./$repo/* . && rm -r ./$repo/"
