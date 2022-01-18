@@ -17,7 +17,7 @@ tmux            -   terminal multiplexer (sudo apt install tmux -y)
 installdot      -   install help
 
 Run this to get a fresh dot:
-    curl https://raw.githubusercontent.com/suchdatums/dotfile/main/getdot | bash
+    curl -s https://raw.githubusercontent.com/suchdatums/dotfile/main/getdot | bash
 
 To persist on Kali:
     echo ". ./.bash_aliases" >> .zshrc
