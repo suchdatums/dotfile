@@ -1,6 +1,6 @@
 #!/bin/bash -i
 
-cd ~
+#cd ~
 
 # make deletable (mutible), if exists
 if [ -f ./getrepo ]; then

@@ -56,7 +56,7 @@ function now {
 
 # <3
 
-alias dot="~/.getdot"
+alias dot="cd ~ && ~/.getdot"
 alias helpdot="clear && more .helpdot"
 alias gethelp="curl -s https://raw.githubusercontent.com/suchdatums/dotfile/main/helpdot > .helpdot"
 alias refresh="source .bash_aliases"
