@@ -34,7 +34,7 @@ cd ~
 #beginswith() { case $2 in "$1"*) true;; *) false;; esac; }
 # loop through every non-hidden file in directory
 for FILE in *; do
-    if [ "`head -c 2 $FILE`" = "#!" ]; then then
+    if [ "`head -c 2 $FILE`" = "#!" ]; then
         # made executable
         chmod +x $FILE
     fi
