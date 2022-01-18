@@ -14,16 +14,16 @@ rm -rf ./$repo/.git
 mv -f /.$repo/* .
 
 # move dot files out of repo folder to <here>
-mv -f ./$repo/.* .
+#mv -f ./$repo/.* .
 
 # delete repo folder
 rm -r ./$repo/
 
 # make them dot files
-#mv -f bash_aliases .bash_aliases
-#mv -f getdot .getdot
-#mv -f helpdot .helpdot
-#mv -f tmux.conf .tmux.conf
+mv -f bash_aliases .bash_aliases
+mv -f getdot .getdot
+mv -f helpdot .helpdot
+mv -f tmux.conf .tmux.conf
 
 # make these executable
 chmod +x .getdot getrepo
