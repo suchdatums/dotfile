@@ -6,7 +6,9 @@ if [[ $(uname -a) == *"Kali"* ]]; then
 fi
 
 # raspberry pi OS is running
-if [[ $(uname -a) == *"armv7l"* ]]; then
+# armv7l - RPI 4
+# armv6l - RPI ZERO
+if [[ $(uname -a) == *"armv"* ]]; then
     export PS1="\n\e[32;1m(\u@\h) \e[35;1m[\w] \e[33;1m\$\e[0m\n"
 fi
 # https://gist.github.com/JBlond/2fea43a3049b38287e5e9cefc87b2124
