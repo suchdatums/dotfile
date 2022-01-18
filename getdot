@@ -36,7 +36,7 @@ sudo chattr +i getrepo
 . ./.bash_aliases
 
 ########
-clear
+#clear
 ls -gop --human-readable --sort=extension --group-directories-first --color=auto
 echo ">> VERSION: $DOT_VERSION"
 echo ">> 'helpdot' for help"
