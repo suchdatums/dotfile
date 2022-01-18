@@ -31,15 +31,16 @@ rm ./$repo/.gitignore
 
 # make scripts executable
 cd $repo
-#beginswith() { case $2 in "$1"*) true;; *) false;; esac; }
 # loop through every non-hidden file in directory
 for FILE in $(files); do
+    # if she bang
     if [ "`head -c 2 $FILE`" = "#!" ]; then
         # made executable
         chmod +x $FILE
     fi
 done
-
+back
+show $repo
 echo
 echo
 echo "RUN THIS TO INSTALL INTO HOME FOLDER:"
