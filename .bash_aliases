@@ -5,10 +5,19 @@ if [[ $(uname -a) == *"Kali"* ]]; then
     echo "."
 fi
 
+# http://jafrog.com/2013/11/23/colors-in-terminal.html
 # raspberry pi OS is running
 if [[ $(uname -a) == *"armv7l"* ]]; then
     export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w] \e[31;3m($DOT_VERSION)\n\e[1;31m└─\e[1;33m\$ \e[0m"
 fi
+
+function chargeup {
+    export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w] \e[31;3m($DOT_VERSION)\e[33;3m\t < GOD MODE ACTIVATED!!! >\n\e[1;31m└─\e[1;33m\$ \e[0m"
+    source .bash_aliases
+}
+function stopthat {
+    export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w] \e[31;3m($DOT_VERSION)\n\e[1;31m└─\e[1;33m\$ \e[0m"
+}
 
 function go {
     if [ -z $1 ]; then
