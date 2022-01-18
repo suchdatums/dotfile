@@ -22,7 +22,7 @@ rm -r ./$repo/
 
 # make them dot files
 mv -f bash_aliases .bash_aliases
-mf -f installdot .installdot
+mv -f installdot .installdot
 mv -f getdot .getdot
 mv -f helpdot .helpdot
 mv -f tmux.conf .tmux.conf
