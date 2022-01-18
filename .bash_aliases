@@ -9,6 +9,7 @@ fi
 if [[ $(uname -a) == *"armv7l"* ]]; then
     export PS1="\n\e[32;1m(\u@\h) \e[35;1m[\w] \e[33;1m\$\e[0m\n"
 fi
+# https://gist.github.com/JBlond/2fea43a3049b38287e5e9cefc87b2124
 # http://jafrog.com/2013/11/23/colors-in-terminal.html
 # %F{%(#.blue.green)}┌──${debian_chroot:+($debian_chroot)─}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))─}(%B%F{%(#.red.blue)}%n$prompt_symbol%m%b%F{%(#.blue.green)})-[%B%F{reset}%(6~.%-1~/…/%4~.%5~)%b%F{%(#.blue.green)}]\n└─%B%(#.%F{red}#.%F{blue}$)%b%F{reset} 
 # O.G. Kali prompt
