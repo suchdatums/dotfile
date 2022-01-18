@@ -31,10 +31,14 @@ chmod +x .getdot getrepo
 # make safe from deletion
 sudo chattr +i getrepo
 
+# to have version number show up
 . ./.bash_aliases
 
 ########
 clear
 ls -gop --human-readable --sort=extension --group-directories-first --color=auto
-echo "VERSION: <<< $DOT_VERSION >>>"
-echo -e "\they...\n\t\ttype 'refresh' to take effect.\n\n\ntype 'helpdot' for help...\n\n..."
+echo ">> VERSION: $DOT_VERSION"
+echo ">> 'helpdot' for help"
+echo
+echo 
+echo "RUN THIS: source .bash_aliases"
