@@ -1,19 +1,13 @@
 export DOT_VERSION=9011
 
-# TODO - how to play nice with zsh?
-export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w]\n\e[1;31m└─\e[1;33m\$ \e[0m"
-# if [[ "$whole" == *"$part"* ]]; then
-#if [[ ! $(uname -a) == *"$Kali"* ]]; then
-#    export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w]\n\e[1;31m└─\e[1;33m\$ \e[0m"
-#fi
-
-echo "DOT is loaded"
-
+# Kali OS is running
 if [[ $(uname -a) == *"Kali"* ]]; then
-    echo "Kali system detected"
+    echo "."
 fi
+
+# raspberry pi OS is running
 if [[ $(uname -a) == *"armv7l"* ]]; then
-    echo "raspberry pi OS detected"
+    export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w]\n\e[1;31m└─\e[1;33m\$ \e[0m"
 fi
 
 function go {
