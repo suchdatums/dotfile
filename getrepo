@@ -40,11 +40,12 @@ rm ./$repo/.gitignore
 # ./$repo/SETUP_$repo
 
 # loop through every non-hidden file in directory
-for FILE in ./$repo/*; do
+cd $repo
+for FILE in *; do
     # if first line has '#!' in it...
-    if [ $(head -n 1 ./$repo/FILE) == *"#!"* ]; then
+    if [ $(head -n 1 FILE) == *"#!"* ]; then
         # made executable
-        chmod +x ./$repo/FILE
+        chmod +x FILE
 done
 
 echo
@@ -54,5 +55,6 @@ read inp
 if [ $inp != "yes" ]; then
 exit
 fi
+cd ~
 cp -rf ./$repo/* .
 rm -r ./$repo/
