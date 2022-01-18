@@ -13,7 +13,6 @@ fi
 
 function chargeup {
     export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w] \e[31;3m($DOT_VERSION)\e[33;3m\t < GOD MODE ACTIVATED!!! >\n\e[1;31m└─\e[1;33m\$ \e[0m"
-    source .bash_aliases
 }
 function stopthat {
     export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w] \e[31;3m($DOT_VERSION)\n\e[1;31m└─\e[1;33m\$ \e[0m"
