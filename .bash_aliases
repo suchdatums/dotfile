@@ -7,6 +7,13 @@ export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w]\n\e[1;31m└─\e[1;
 #    export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w]\n\e[1;31m└─\e[1;33m\$ \e[0m"
 #fi
 
+if [[ $(uname -a) == *"$Kali"* ]]; then
+    echo "Kali system detected"
+fi
+if [[ ! $(uname -a) == *"$armv7l"* ]]; then
+    echo "raspberry pi OS detected"
+fi
+
 function go {
     if [ -z $1 ]; then
         echo "go where??"
@@ -41,6 +48,7 @@ function now {
 alias dot="cd ~/ && ~/.getdot"
 alias helpdot="clear && more .helpdot"
 alias gethelp="curl -s https://raw.githubusercontent.com/suchdatums/dotfile/main/helpdot > .helpdot"
+alias refresh="source .bash_aliases"
 
 # update go function above if you update list
 alias l="ls -gop --human-readable --sort=extension --group-directories-first --color=auto"
