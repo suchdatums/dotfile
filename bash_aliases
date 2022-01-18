@@ -58,7 +58,9 @@ function now {
 
 # <3
 
-alias dot="cd ~ && curl -s https://raw.githubusercontent.com/suchdatums/dotfile/main/getdot | bash"
+alias dot="cd ~ && ~/.getdot"
+# use if getdot is changed
+alias freshdot="cd ~ && curl -s https://raw.githubusercontent.com/suchdatums/dotfile/main/getdot | bash"
 alias helpdot="clear && more .helpdot"
 alias installdot="clear && more .installdot"
 alias gethelp="curl -s https://raw.githubusercontent.com/suchdatums/dotfile/main/helpdot > .helpdot"
