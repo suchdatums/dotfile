@@ -29,24 +29,15 @@ git clone --recurse-submodules --remote-submodules $url
 rm -rf ./$repo/.git
 rm ./$repo/.gitignore
 
-# echo
-# echo "RUN SETUP SCRIPT?"
-# echo "type yes if yes"
-# read inp
-# if [ $inp != "yes" ]; then
-# exit
-# fi
-# chmod +x ./$repo/SETUP_$repo
-# ./$repo/SETUP_$repo
-
 # loop through every non-hidden file in directory
-cd $repo
-for FILE in *; do
-    # if first line has '#!' in it...
-    if [ $(head -n 1 FILE) == *"#!"* ]; then
-        # made executable
-        chmod +x FILE
-done
+# cd $repo
+# for FILE in *; do
+#     # if first line has '#!' in it...
+#     if [ $(head -n 1 FILE) == *"#!"* ]; then
+#         # made executable
+#         chmod +x FILE
+#     fi
+# done
 
 echo
 echo "DO YOU WANT TO INSTALL IN THE HOME FOLDER?"
