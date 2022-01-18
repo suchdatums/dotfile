@@ -35,6 +35,8 @@ sudo chattr +i getrepo
 # to have version number show up
 . ./.bash_aliases
 
+touch .dot$DOT_VERSION
+
 ########
 #clear
 ls -gop --human-readable --sort=extension --group-directories-first --color=auto
