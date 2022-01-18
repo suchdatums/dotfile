@@ -1,6 +1,11 @@
-if [ -f ./.setdot ]; then
-    . ./.setdot
-fi 
+export DOT_VERSION=9008.1
+
+# TODO - how to play nice with zsh?
+export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w]\n\e[1;31m└─\e[1;33m\$ \e[0m"
+# if [[ "$whole" == *"$part"* ]]; then
+#if [[ ! $(uname -a) == *"$Kali"* ]]; then
+#    export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w]\n\e[1;31m└─\e[1;33m\$ \e[0m"
+#fi
 
 function go {
     if [ -z $1 ]; then
@@ -106,3 +111,7 @@ alias cpuspeed="sudo cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq"
 #alias gc='git checkout'
 
 #echo "                                          hey... listen!!"
+
+# if [ -f ./.setdot ]; then
+#     . ./.setdot
+# fi 

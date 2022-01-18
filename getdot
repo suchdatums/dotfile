@@ -17,18 +17,20 @@ rm -r ./$repo/
 mv -f bash_aliases .bash_aliases
 mv -f getdot .getdot
 mv -f helpdot .helpdot
-mv -f setdot .setdot
+#mv -f setdot .setdot
 mv -f tmux.conf .tmux.conf
 
+# make these executable
 chmod +x .getdot getrepo
 # make safe from deletion
 sudo chattr +i getrepo
 
+. ./.bash_aliases
+
 ########
-ver=9009
 clear
 echo
-echo "VERSION: <<< $ver >>>"
+echo "VERSION: <<< $DOT_VERSION >>>"
 echo
 ls -gop --human-readable --sort=extension --group-directories-first --color=auto
 echo
