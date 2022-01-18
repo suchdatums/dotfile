@@ -1,0 +1,62 @@
+: + : + : + : + : + : + : + : + : + : + : + : + : + : + : + : + : + : +
+
+# ? did you touch ssh and cp wpa_supplicant.conf ?
+
+sudo apt update -y
+sudo apt upgrade -y
+
+sudo raspi-config
+
+# tidy up
+rm -rf Bookshelf/ Documents/ Downloads/ Music/ Pictures/ Public/ Templates/ Videos/
+
+#edits console font size (desktop mode)
+nano .config/lxterminal/lxterminal.conf
+
+# VS CODE
+git config --global user.name ""
+git config --global user.email ""
+#git config --list
+#~/.gitconfig
+sudo apt-get install -y gnome-keyring
+
+# you may want these:
+sudo apt-get install cmatrix
+sudo apt-get install tmux
+sudo apt-get install batcat
+sudo apt-get install rpi-imager
+sudo apt install git -y
+
+# install profile
+cat << EOF >> ~/.profile
+echo "hey... listen!!"
+EOF
+
+: + : + : + : + : + : + : + : + : + : + : + : + : + : + : + : + : + : +
+
+# enable and start SSH (on Kali?)
+sudo systemctl enable ssh
+sudo systemctl start ssh
+
+# usage
+```
+batcat
+batcat -p TURNS OFF DECORATORS
+batcat -r 1:50 READ LINES 1-50 or... :50 (1-50) or... 50: (50 to EOF)
+batcat --list-themes
+batcat --theme ansi-dark
+```
+
+# usage
+batcat
+batcat -p TURNS OFF DECORATORS
+batcat -r 1:50 READ LINES 1-50 or... :50 (1-50) or... 50: (50 to EOF)
+batcat --list-themes
+batcat --theme ansi-dark
+
+# inspired by
+https://github.com/sundowndev/dotfiles
+```bash
+curl -sSL https://raw.githubusercontent.com/sundowndev/dotfiles/master/install.sh | bash
+```
+#https://www.datafix.com.au/BASHing/2020/02/19.html

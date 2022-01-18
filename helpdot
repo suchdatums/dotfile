@@ -14,8 +14,7 @@ home            -   go home
 back            -   go back to last directory
 mc              -   midnight commander (sudo apt install mc -y)
 tmux            -   terminal multiplexer (sudo apt install tmux -y)
-                    Control-d then % for vertical split
-                                   " for horizontal split
+installdot      -   install help
 
 Run this to get a fresh dot:
     curl https://raw.githubusercontent.com/suchdatums/dotfile/main/getdot | bash
