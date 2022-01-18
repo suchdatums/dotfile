@@ -30,23 +30,15 @@ rm -rf ./$repo/.git
 rm ./$repo/.gitignore
 
 # make scripts executable
-cd ~
+cd $repo
 #beginswith() { case $2 in "$1"*) true;; *) false;; esac; }
 # loop through every non-hidden file in directory
-for FILE in *; do
+for FILE in $(files); do
     if [ "`head -c 2 $FILE`" = "#!" ]; then
         # made executable
         chmod +x $FILE
     fi
 done
 
-echo
-echo "DO YOU WANT TO INSTALL IN THE HOME FOLDER?"
-echo "type yes if yes"
-read inp
-if [ $inp != "yes" ]; then
-exit
-fi
-cd ~
-cp -rf ./$repo/* .
-rm -r ./$repo/
+echo "RUN THIS TO INSTALL INTO HOME FOLDER:"
+echo "cp -rf ./$repo/* . && rm -r ./$repo/
