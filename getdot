@@ -1,5 +1,7 @@
 #!/bin/bash -i
 
+cd ~
+
 # make deletable (mutible), if exists
 if [ -f ./getrepo ]; then
     sudo chattr -i getrepo
