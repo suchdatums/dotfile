@@ -1,15 +1,6 @@
-# if [[ "$whole" == *"$part"* ]]; then
-#if [[ ! $(uname -a) == *"$Kali"* ]]; then
-#    export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w]\n\e[1;31m└─\e[1;33m\$ \e[0m"
-#fi
-
-# TODO - how to play nice with zsh?
-export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w]\n\e[1;31m└─\e[1;33m\$ \e[0m"
-
-# function go {
-#     builtin cd "$@" && clear && ls -gop --human-readable --sort=extension --group-directories-first --color=auto
-# }
-# function ggg { if [ -z $1 ]; then echo "go where??"; else echo $1; fi; }
+if [ -f ./.setdot ]; then
+    . ./.setdot
+fi 
 
 function go {
     if [ -z $1 ]; then
@@ -18,6 +9,9 @@ function go {
         builtin cd "$1" && clear && ls -gop --human-readable --sort=extension --group-directories-first --color=auto
     fi
 }
+# function go {
+#     builtin cd "$@" && clear && list
+# }
 
 function temp {
     tc=$(echo $(/opt/vc/bin/vcgencmd measure_temp))
@@ -31,6 +25,7 @@ function tempc2f {
 function when {
     echo $(date -d @$1)
 }
+
 # alias sec="echo $EPOCHSECONDS"
 function now {
     echo $(date +%s)
