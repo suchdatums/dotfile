@@ -5,18 +5,26 @@ if [[ $(uname -a) == *"Kali"* ]]; then
     echo "."
 fi
 
-# http://jafrog.com/2013/11/23/colors-in-terminal.html
 # raspberry pi OS is running
 if [[ $(uname -a) == *"armv7l"* ]]; then
-    export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w] \e[31;3m($DOT_VERSION)\n\e[1;31m└─\e[1;33m\$ \e[0m"
+    export PS1="\n\e[1;32m(\u@\h) \e[1;35m[\w]\e[31;3m . \e[1;33m\$\e[0m\n"
 fi
+# http://jafrog.com/2013/11/23/colors-in-terminal.html
+# O.G. Kali prompt
+# has problems when you pull up previous commands.. scrap it.  Fancy, but no.
+#export PS1="\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w] \e[31;3m.\n\e[1;31m└─\e[1;33m\$ \e[0m"
+# SHOW TIME
+#export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w] \e[31;3m. \e[32;1mTIME:\e[32;3m\T\n\e[1;31m└─\e[1;33m\$ \e[0m"
+# MINIMAL
+#export PS1="\n\e[1;32m(\u@\h) \e[1;35m[\w] \e[31;3m.\n\e[0m"
 
 function chargeup {
-    export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w] \e[31;3m($DOT_VERSION) \e[32;4m\T \e[33;3mGOD_MODE\n\e[1;31m└─\e[1;33m\$ \e[0m"
+    #newps=FUCKYES\n$PS1
+     export PS1="FUCKYES\n$PS1"
 }
-function stopthat {
-    export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w] \e[31;3m($DOT_VERSION)\n\e[1;31m└─\e[1;33m\$ \e[0m"
-}
+# function stopthat {
+#     export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w] \e[31;3m($DOT_VERSION)\n\e[1;31m└─\e[1;33m\$ \e[0m"
+# }
 
 function go {
     if [ -z $1 ]; then
