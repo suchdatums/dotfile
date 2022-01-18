@@ -7,9 +7,10 @@ fi
 
 # raspberry pi OS is running
 if [[ $(uname -a) == *"armv7l"* ]]; then
-    export PS1="\n\e[1;32m(\u@\h) \e[1;35m[\w]\e[31;3m . \e[1;33m\$\e[0m\n"
+    export PS1="\n\e[32;1m(\u@\h) \e[35;1m[\w] \e[33;1m\$\e[0m\n"
 fi
 # http://jafrog.com/2013/11/23/colors-in-terminal.html
+# %F{%(#.blue.green)}┌──${debian_chroot:+($debian_chroot)─}${VIRTUAL_ENV:+($(basename $VIRTUAL_ENV))─}(%B%F{%(#.red.blue)}%n$prompt_symbol%m%b%F{%(#.blue.green)})-[%B%F{reset}%(6~.%-1~/…/%4~.%5~)%b%F{%(#.blue.green)}]\n└─%B%(#.%F{red}#.%F{blue}$)%b%F{reset} 
 # O.G. Kali prompt
 # has problems when you pull up previous commands.. scrap it.  Fancy, but no.
 #export PS1="\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w] \e[31;3m.\n\e[1;31m└─\e[1;33m\$ \e[0m"
@@ -18,13 +19,10 @@ fi
 # MINIMAL
 #export PS1="\n\e[1;32m(\u@\h) \e[1;35m[\w] \e[31;3m.\n\e[0m"
 
-function chargeup {
-    #newps=FUCKYES\n$PS1
-     export PS1="FUCKYES\n$PS1"
+function godmode {
+     echo "'refresh' to clear"
+     export PS1="\e[33;1m\n<GOD MODE>\e[0m$PS1"
 }
-# function stopthat {
-#     export PS1="\n\e[1;31m┌──\e[1;32m(\u@\h) \e[1;35m[\w] \e[31;3m($DOT_VERSION)\n\e[1;31m└─\e[1;33m\$ \e[0m"
-# }
 
 function go {
     if [ -z $1 ]; then
@@ -72,6 +70,7 @@ alias files="ls -1p | grep -v /"
 
 alias up="go .."
 alias home="go ~/"
+alias back="cd $OLDPWD"
 
 # --smooth doesn't work anymore??
 # --morespace also...?
