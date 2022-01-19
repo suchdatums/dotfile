@@ -59,6 +59,6 @@ else
     exit
 fi
 
-echo
+#echo
 # TODO this won't move dot files!!
-echo "RUN THIS TO INSTALL INTO HOME FOLDER:   cp -rf ./$repo/* . && rm -r ./$repo/"
+#echo "RUN THIS TO INSTALL INTO HOME FOLDER:   cp -rf ./$repo/* . && rm -r ./$repo/"
