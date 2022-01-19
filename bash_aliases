@@ -60,7 +60,7 @@ function now {
     echo $(date +%s)
 }
 
-function asktoinstall() {
+function asktoinstall {
     echo -e "\e[33;1m"
     echo "$@"
     echo -e "\e[0m"
