@@ -18,6 +18,7 @@ if [ -d ./$repo/ ]; then
     else
         echo "exiting..."
         exit
+    fi
 fi
 
 # get repo and tidy up
