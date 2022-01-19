@@ -8,7 +8,9 @@ echo "INSTALL SCRIPT RUNNING"
 
 
 # always remember to...
-###################
+echo
+echo ###################
+echo "always remember to..."
 cmds="
 sudo raspi-config
 
@@ -20,7 +22,9 @@ asktoinstall "$cmds"
 
 
 # tidy up
-###################
+echo
+echo ###################
+echo "tidy up?"
 cmds="
 rm -rf Bookshelf/ Documents/ Downloads/ Music/ Pictures/ Public/ Templates/ Videos/
 "
@@ -34,8 +38,8 @@ exit
 
 # TEMPLATE
 echo
+echo ###################
 echo "explain to the user right here"
-###################
 cmds="
 echo 'put commands here'
 echo 'careful with your quotes'
