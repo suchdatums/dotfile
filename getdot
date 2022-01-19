@@ -23,13 +23,15 @@ rm -r ./$repo/
 
 # make them dot files
 mv -f bash_aliases .bash_aliases
-mv -f installdot .installdot
 mv -f getdot .getdot
 mv -f helpdot .helpdot
+mv -f installdot .installdot
 mv -f tmux.conf .tmux.conf
 
 # make these executable
-chmod +x .getdot .installdot getrepo
+chmod +x .getdot
+chmod +x getrepo
+chmod +x .installdot
 
 # make safe from deletion
 sudo chattr +i getrepo
