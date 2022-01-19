@@ -39,11 +39,10 @@ sudo chattr +i getrepo
 touch .dot$DOT_VERSION
 
 ########
-#clear
-helpdot
-echo "VERSION $DOT_VERSION"
+more .helpdot
+echo -e "VERSION: \e[33;1m$DOT_VERSION\e[0m"
 ls -gop --human-readable --sort=extension --group-directories-first --color=auto
 echo -e "
 >> 'helpdot' for help
->> RUN this to refresh:  \e[32;1m source .bash_aliases \e[0m\n
+>> RUN this to refresh: \e[0;91m source .bash_aliases \e[0m\n
 "
