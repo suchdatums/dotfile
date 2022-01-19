@@ -1,6 +1,7 @@
 #!/bin/bash -i
 
-#cd ~
+cd ~
+clear
 
 # make deletable (mutible), if exists
 if [ -f ./getrepo ]; then
@@ -28,7 +29,7 @@ mv -f helpdot .helpdot
 mv -f tmux.conf .tmux.conf
 
 # make these executable
-chmod +x .getdot getrepo
+chmod +x .getdot .installdot getrepo
 
 # make safe from deletion
 sudo chattr +i getrepo

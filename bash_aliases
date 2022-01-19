@@ -60,13 +60,24 @@ function now {
     echo $(date +%s)
 }
 
+function asktoinstall() {
+    echo -e "\e[33;1m"
+    echo "$@"
+    echo -e "\e[0m"
+    echo "Type 'yes' to run:"
+    read y
+    if [ "$y" = "yes" ]; then
+        echo "$@" | bash
+    fi
+}
+
 # <3
 
-alias dot="cd ~ && ~/.getdot"
+alias dot="~/.getdot"
 # use if getdot is changed
-alias freshdot="cd ~ && curl -s https://raw.githubusercontent.com/suchdatums/dotfile/main/getdot | bash"
+alias freshdot="curl -s https://raw.githubusercontent.com/suchdatums/dotfile/main/getdot > ~/.getdot && cat ~/.getdot"
 alias helpdot="clear && more .helpdot"
-alias installdot="clear && more .installdot"
+alias installdot="~/.installdot"
 alias gethelp="curl -s https://raw.githubusercontent.com/suchdatums/dotfile/main/helpdot > .helpdot"
 alias refresh="source .bash_aliases"
 
