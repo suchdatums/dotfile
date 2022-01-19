@@ -29,11 +29,10 @@ asktoinstall "$cmds"
 
 
 
-
 echo "done"
 exit
-###################
-# TEMPLATE ########
+
+# TEMPLATE
 ###################
 cmds="
 echo 'put commands here'
