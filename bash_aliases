@@ -66,7 +66,7 @@ function asktoinstall {
     echo "Type 'yes' to run:"
     read y
     if [ "$y" = "yes" ]; then
-        echo "$@" | bash
+        bash -c "$@"
     fi
 }
 
