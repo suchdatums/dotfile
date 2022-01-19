@@ -39,8 +39,6 @@ sudo chattr +i getrepo
 # to have version number show up
 . ./.bash_aliases
 
-touch .dot$DOT_VERSION
-
 ########
 cat .helpdot
 echo -e "\e[33;1m"
