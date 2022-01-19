@@ -21,4 +21,5 @@ Run this to get a fresh dot:
 
 To persist on Kali:
     echo ". ./.bash_aliases" >> .zshrc
+    
 : . : . : . : . : . : . : . : . : . : . : . : . : . : . : . : . : . : . : . : .

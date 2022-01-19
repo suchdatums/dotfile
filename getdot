@@ -40,7 +40,9 @@ touch .dot$DOT_VERSION
 
 ########
 cat .helpdot
-echo "VERSION: \e[33;1m $DOT_VERSION \e[0m"
+echo -e "\e[33;1m"
+echo "VERSION: $DOT_VERSION"
+echo -e "\e[0m"
 ls -gop --human-readable --sort=extension --group-directories-first --color=auto
 echo -e "
 >> 'helpdot' for help
