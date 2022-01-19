@@ -11,9 +11,9 @@ fi
 # if the repo has already been downloaded...
 if [ -d ./$repo/ ]; then
     echo "this repo already exists..."
-    echo "remove with:  'rm -rf $repo'  (?)  type yes if yes"
+    echo -e "remove ('rm -rf $repo') and re-download?\ntype 'yes' if yes"
     read inp
-    if [ -eq $inp "yes" ]; then
+    if [ "$inp" == "yes" ]; then
         rm -rf ./$repo
     else
         echo "exiting..."
