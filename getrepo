@@ -9,16 +9,19 @@ if [ -z $1 ]; then
 fi
 
 # if the repo has already been downloaded...
+# if [ -d ./$repo/ ]; then
+#     echo "this repo already exists..."
+#     echo -e "remove ('rm -rf $repo') and re-download?\ntype 'yes' if yes"
+#     read inp
+#     if [ "$inp" == "yes" ]; then
+#         rm -rf ./$repo
+#     else
+#         echo "exiting..."
+#         exit
+#     fi
+# fi
 if [ -d ./$repo/ ]; then
-    echo "this repo already exists..."
-    echo -e "remove ('rm -rf $repo') and re-download?\ntype 'yes' if yes"
-    read inp
-    if [ "$inp" == "yes" ]; then
-        rm -rf ./$repo
-    else
-        echo "exiting..."
-        exit
-    fi
+    rm -rf ./$repo
 fi
 
 # get repo and tidy up
@@ -45,7 +48,14 @@ back
 
 
 show $repo
+
+echo -e "run setup script?\ntype 'yes' if yes"
+read inp
+if [ "$inp" == "yes" ]; then
+    ./$repo/SETUP
+else
+    exit
+fi
+
 echo
-echo
-echo "RUN THIS TO INSTALL INTO HOME FOLDER:"
-echo "cp -rf ./$repo/* . && rm -r ./$repo/"
+echo "RUN THIS TO INSTALL INTO HOME FOLDER:   cp -rf ./$repo/* . && rm -r ./$repo/"
