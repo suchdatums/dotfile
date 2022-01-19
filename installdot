@@ -28,6 +28,9 @@ asktoinstall "$cmds"
 
 
 
+
+
+echo "done"
 exit
 ###################
 # TEMPLATE ########
