@@ -49,7 +49,9 @@ back
 
 show $repo
 
+echo -e "\e[33;1m"
 echo -e "run setup script?\ntype 'yes' if yes"
+echo -e "\e[0m"
 read inp
 if [ "$inp" == "yes" ]; then
     ./$repo/SETUP
