@@ -39,7 +39,7 @@ sudo chattr +i getrepo
 touch .dot$DOT_VERSION
 
 ########
-more .helpdot
+cat .helpdot
 echo "VERSION: \e[33;1m $DOT_VERSION \e[0m"
 ls -gop --human-readable --sort=extension --group-directories-first --color=auto
 echo -e "
