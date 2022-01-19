@@ -61,7 +61,7 @@ function now {
 }
 
 function asktoinstall {
-    echo -e "\e[1;32mRun this?\e[0m"
+    echo -e "\n\e[1;32mRun this?\e[0m"
     echo -e "\e[33;1m$@\e[0m"
     echo "Type 'yes' to run:"
     read y
