@@ -41,9 +41,9 @@ touch .dot$DOT_VERSION
 ########
 #clear
 helpdot
+echo "VERSION $DOT_VERSION"
 ls -gop --human-readable --sort=extension --group-directories-first --color=auto
-echo "
->> .$DOT_VERSION
+echo -e "
 >> 'helpdot' for help
->> RUN this to refresh:  source .bash_aliases
+>> RUN this to refresh:  \e[32;1m source .bash_aliases \e[0m\n
 "
