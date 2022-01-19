@@ -36,25 +36,21 @@ url="https://github.com/suchdatums/$repo"
 
 # make scripts executable
 cd $repo
-    # loop through every non-hidden file in directory
-    for FILE in $(files); do
-        # if she bang
-        if [ "`head -c 2 $FILE`" = "#!" ]; then
-            # made executable
-            chmod +x $FILE
-        fi
-    done
-back
-
+# loop through every non-hidden file in directory
+for FILE in $(files); do
+    # if she bang
+    if [ "`head -c 2 $FILE`" = "#!" ]; then
+        # made executable
+        chmod +x $FILE
+    fi
+done
 
 show $repo
 
-echo -e "\e[33;1m"
-echo -e "run setup script?\ntype 'yes' if yes"
-echo -e "\e[0m"
+echo -e "\e[33;1m run setup script? \e[0m\ntype 'yes' if yes"
 read inp
 if [ "$inp" == "yes" ]; then
-    ./$repo/SETUP
+    ./SETUP
 else
     exit
 fi
