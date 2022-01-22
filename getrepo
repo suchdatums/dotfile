@@ -24,9 +24,20 @@ if [ -d ./$repo/ ]; then
     rm -rf ./$repo
 fi
 
+# OLD VERSION
+# repo="DOMinate"
+# url="https://github.com/suchdatums/$repo"
+# git clone --depth=1 $url
+# rm -rf ./$repo/.git
+# rm ./$repo/.gitignore
+# mv -f ./$repo/* ~/
+# rm -r ./$repo/
+
 # get repo and tidy up
 url="https://github.com/suchdatums/$repo"
-    git clone --recurse-submodules --remote-submodules $url
+    # --recursive-submodules doesn't work on debian in VM... shit
+    #git clone --recurse-submodules --remote-submodules $url
+    git clone --depth=1 $url
     # TODO 
     # how can I recurse into every subdir and delete the .git file?
     # can can I do this safely without destorying any project I may be working on?
