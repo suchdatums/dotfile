@@ -4,9 +4,9 @@ cd ~
 clear
 
 # make deletable (mutible), if exists
-if [ -f ./getrepo ]; then
-    sudo chattr -i getrepo
-fi
+#if [ -f ./getrepo ]; then
+#    sudo chattr -i getrepo
+#fi
 
 repo="dotfile"
 url="https://github.com/suchdatums/$repo"
@@ -34,7 +34,8 @@ chmod +x getrepo
 chmod +x .installdot
 
 # make safe from deletion
-sudo chattr +i getrepo
+# NOPE, NOT ANYMORE
+# sudo chattr +i getrepo
 
 # to have version number show up
 . ./.bash_aliases

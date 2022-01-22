@@ -1,4 +1,4 @@
-export DOT_VERSION=99
+export DOT_VERSION=100
 
 # Kali OS is running
 if [[ $(uname -a) == *"Kali"* ]]; then
@@ -76,7 +76,8 @@ function asktoinstall {
 
 alias dot="~/.getdot"
 # use if getdot is changed
-alias freshdot="curl -s https://raw.githubusercontent.com/suchdatums/dotfile/main/getdot > ~/.getdot && cat ~/.getdot"
+#alias freshdot="cd ~ && curl -s https://raw.githubusercontent.com/suchdatums/dotfile/main/getdot > ~/.getdot && cat ~/.getdot"
+alias freshdot="cd ~ && curl -s https://raw.githubusercontent.com/suchdatums/dotfile/main/getdot | bash"
 alias helpdot="clear && more .helpdot"
 alias installdot="~/.installdot"
 alias gethelp="curl -s https://raw.githubusercontent.com/suchdatums/dotfile/main/helpdot > .helpdot"
